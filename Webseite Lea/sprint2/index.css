@@ -1,0 +1,45 @@
+#hamnav {
+    width: 100%;
+    background: #ffffff;
+    z-index: 0;
+    position: relative;
+    margin: 0px;
+    margin-top: -20px;
+  }
+
+
+#hamitems a:hover { background: #9c9c9c; }
+
+
+#hamitems { display: flex; }
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-family: 'Prata', serif;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #606060;
+}
+
+#hamnav label { 
+    position: fixed;
+    top: 0;
+    display: inline-block; 
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    border: 1px solid black;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: -3px;
+  }
+
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { display: block; }
+
+
